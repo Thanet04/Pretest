@@ -1,0 +1,31 @@
+สร้าง class billpayment ขึ้นมา แล้วกำหนดค่า Attributes 
+    String billType;
+    int billLastUnit;
+    int billCurrentUnit;
+    double billResult;
+สร้าง  Constructor ขึ้นมาเพื่อกำหนดค่าบางตัวของ Attributes
+
+สร้าง getBillCurrentUnit() และ retrun BillCurrentUnit;
+สร้าง setBillCurrentUnit(int currentUnit)โดย lastUnit ต้องมีค่าน้อยกว่า bill_currentUnit 
+ถ้าไม่ตรงตามเงื่อนไข แสดงข้อความว่า “Please Insert a correctunit”
+        if (currentUnit > billLastUnit) {
+            billCurrentUnit = currentUnit;
+        } else {
+            System.out.println("Please Insert a correct unit");
+        }
+
+สร้าง calculateUnit() และ retrun bill_currentUnit – bill_lastUni;
+
+สร้าง calculateBill() 
+ถ้า bill_Type คือ “Water” bill_Result = calculateUnit() คูณ 5
+ถ้า bill_Type คือ “Electric” bill_Result = calculateUnit() คูณ 6
+Return bill_Result
+        if (billType.equals("Water")) {
+            billResult = calculateUnit() * 5;
+        } else if (billType.equals("Electric")) {
+            billResult = calculateUnit() * 6;
+        }
+        return billResult;
+
+แล้วสร้าง displayBill() ขึ้นมาเพื่อ
+แสดงข้อความ “My payment bill is : bill_Type , The result is : billResult”
