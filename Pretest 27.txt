@@ -1,0 +1,6 @@
+สร้าง object bill มา โดยกำหนด bill_Type เป็น “Electric” และ bill_lastUni เป็น 250
+แล้วใช้ Method setBillCurrentUnit กำหนดเป็น 450 
+ใช้ Method calculateUnit เพื่อคำนวณค่า unit
+ใช้ Method calculateBill เพื่อคำนวณค่า bill
+
+แล้วแสดงข้อมูลโดย displayBill
